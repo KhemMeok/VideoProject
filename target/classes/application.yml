@@ -1,0 +1,20 @@
+spring:
+  mvc:
+    path-match:
+      matching-strategy:  ant-path-matcher
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Video_Course_2
+    username: postgres
+    password: 2002
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL95Dialect
+jwt:
+  secret: "SK#$&*!@!123KU$&(#@./"
+  expiration: 3600000
+
+  main:
+    allow-circular-references: true
